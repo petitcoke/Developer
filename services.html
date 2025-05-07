@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons (Replaces Feather) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Additional styles specific to services page */
+    .services-header {
+      padding: 2rem 0;
+    }
+    
+    .services-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--blue-400);
+      margin-bottom: 2rem;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .service-card {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+    }
+    
+    .service-icon-container {
+      background-color: #6A9DFF;
+      padding: 1.5rem;
+    }
+    
+    .service-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--blue-500);
+      border-radius: 0.5rem;
+      color: white;
+    }
+    
+    .service-content {
+      padding: 2rem;
+    }
+    
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .service-description {
+      color: var(--text-color);
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-projects {
+      font-weight: 600;
+      color: var(--blue-400);
+    }
+    
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <header class="header">
+      <div class="logo-container">
+        <a href="/" class="logo">
+          <img src="Images/Logo.png" alt="Logo" width="50" height="50">
+        </a>
+        <span class="email">reirei@gmail.com</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="works.html" class="nav-link">Works</a>
+        <a href="skills.html" class="nav-link">Software</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="/resume.pdf" class="btn btn-primary">
+        Resume
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.5 1.5V10.5M7.5 10.5L3.5 6.5M7.5 10.5L11.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 13.5H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </header>
+
+    <!-- Services Header -->
+    <section class="services-header">
+      <h1 class="services-title">My Specialization</h1>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid">
+      <!-- Web Development -->
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon">
+            <i data-lucide="code"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Web Development</h2>
+          <p class="service-description">
+            Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utilizing methods such as surveys, interviews, and usability testing...
+          </p>
+          <div class="service-projects">10+ PROJECTS</div>
+        </div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon">
+            <i data-lucide="gamepad-2"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Game Development</h2>
+          <p class="service-description">
+            Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utilizing methods such as surveys, interviews, and usability testing...
+          </p>
+          <div class="service-projects">10+ PROJECTS</div>
+        </div>
+      </div>
+
+      <!-- Content Writing -->
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon">
+            <i data-lucide="video"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Video Editing</h2>
+          <p class="service-description">
+            Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utilizing methods such as surveys, interviews, and usability testing...
+          </p>
+          <div class="service-projects">1000+ PROJECTS</div>
+        </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon">
+            <i data-lucide="smartphone"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">App Development</h2>
+          <p class="service-description">
+            Conducting qualitative and quantitative research to understand user needs, behaviors, and pain points. Utilizing methods such as surveys, interviews, and usability testing...
+          </p>
+          <div class="service-projects">2 PROJECTS</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+    
+    // Add active class to current page in navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = window.location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href').split('/').pop();
+        if (linkHref === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
