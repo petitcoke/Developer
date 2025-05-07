@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rei Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="Images/Logo.png" alt="Profile logo" />
+      </div>
+      <a href="mailto:reirei@gmail.com" class="email">reirei@gmail.com</a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="works.html">Works</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="hire-button">Hire Me!</a>
+  </header>
+
+  <main>
+    <section id="skills" class="skills-section">
+      <h1>My Skills</h1>
+      <p class="subtitle">
+        We put your ideas and thus your wishes in the form of a unique web project that
+        inspires you and your customers.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Unity 6 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="Images/Unity.png" alt="Unity logo" />
+          </div>
+          <div class="skill-progress-container">
+            <div class="skill-progress" data-percentage="92"></div>
+          </div>
+          <div class="skill-percentage">92%</div>
+          <h3 class="skill-name">Unity 6</h3>
+        </div>
+
+        <!-- Unreal Engine 5 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="Images/UE5.png" alt="Unreal Engine logo" />
+          </div>
+          <div class="skill-progress-container">
+            <div class="skill-progress" data-percentage="80"></div>
+          </div>
+          <div class="skill-percentage">80%</div>
+          <h3 class="skill-name">Unreal Engine 5</h3>
+        </div>
+
+        <!-- Blender -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="Images/Blender.png" alt="Blender logo" />
+          </div>
+          <div class="skill-progress-container">
+            <div class="skill-progress" data-percentage="85"></div>
+          </div>
+          <div class="skill-percentage">85%</div>
+          <h3 class="skill-name">Blender</h3>
+        </div>
+
+        <!-- C# -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="Images/CSharp.png" alt="C# logo" />
+          </div>
+          <div class="skill-progress-container">
+            <div class="skill-progress" data-percentage="99"></div>
+          </div>
+          <div class="skill-percentage">99%</div>
+          <h3 class="skill-name">C#</h3>
+        </div>
+
+        <!-- C++ -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="images/C++.png" alt="C++ logo" />
+          </div>
+          <div class="skill-progress-container">
+            <div class="skill-progress" data-percentage="89"></div>
+          </div>
+          <div class="skill-percentage">89%</div>
+          <h3 class="skill-name">C++</h3>
+        </div>
+
+        <!-- HTML + CSS -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="images/HTML.png" alt="HTML & CSS logo" />
+          </div>
+          <div class="skill-progress-container">
+            <div class="skill-progress" data-percentage="99"></div>
+          </div>
+          <div class="skill-percentage">99%</div>
+          <h3 class="skill-name">HTML + CSS</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Progress-bar Initialization Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.skill-progress').forEach(el => {
+        const pct = el.getAttribute('data-percentage');
+        const width = Math.max(0, Math.min(100, Number(pct)));
+        el.style.width = width + '%';
+      });
+    });
+  </script>
+</body>
+</html>

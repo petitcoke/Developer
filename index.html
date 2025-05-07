@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rei’s Portfolio</title>
+
+  <!-- main stylesheet & Google Font -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="logo-container">
+      <a href="#home" class="logo">
+        <img src="Images/Logo.png" alt="Logo" width="50" height="50">
+      </a>
+      <span class="email">reirei@gmail.com</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#home"        class="nav-link">Home</a>
+      <a href="#services"    class="nav-link">Services</a>
+      <a href="#works"       class="nav-link">Works</a>
+      <a href="#skills"      class="nav-link">Software</a>
+      <a href="#testimonials"class="nav-link">Testimonials</a>
+      <a href="#contact"     class="nav-link">Contact</a>
+    </nav>
+
+    <a href="/Images/Rei CV.pdf" class="btn btn-primary">
+      Resume
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.5 1.5V10.5M7.5 10.5L3.5 6.5M7.5 10.5L11.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 13.5H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="card hero-card">
+        <div class="hero-image">
+          <img src="Images/Profile.jpg" alt="Profile" class="profile-image">
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm Rei!<br>
+            Web & Game Developer
+          </h1>
+          <p class="hero-description">
+            I design and code beautifully simple things and I love what I do. Just simple like that!
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Hire Me! <i data-lucide="arrow-right"></i>
+            </a>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/reidev/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://instagram.com/reicoder" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@petitcoke" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="youtube"></i>
+              </a>
+              <a href="https://x.com/petitcoke" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="twitter"></i>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+      <div class="card stats-card">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <i data-lucide="gamepad-2" class="stat-icon"></i>
+            <h2 class="stat-number">10+</h2>
+            <p class="stat-label">Games Developed</p>
+          </div>
+          <div class="stat-item">
+            <i data-lucide="briefcase" class="stat-icon"></i>
+            <h2 class="stat-number">3+</h2>
+            <p class="stat-label">Years of Experience</p>
+          </div>
+          <div class="stat-item">
+            <i data-lucide="monitor" class="stat-icon"></i>
+            <h2 class="stat-number">10+</h2>
+            <p class="stat-label">Websites Built</p>
+          </div>
+          <div class="stat-item">
+            <i data-lucide="check-square" class="stat-icon"></i>
+            <h2 class="stat-number">50+</h2>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements-section">
+      <div class="achievements-grid">
+        <div class="card achievements-card">
+          <h2 class="section-title">
+            <span class="highlight">Achievements</span> in my professional life.
+          </h2>
+          <p class="section-description">
+            Since beginning my journey as a freelance designer nearly 5 years ago, I've done remote work for agencies,
+            consulted for startups, and collaborated with talented people to create digital products for both business
+            and consumer use.
+          </p>
+          <a href="#contact" class="btn btn-primary">
+            Contact Me <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+        <div class="card interface-card">
+          <h2 class="section-title">
+            <span class="highlight">Game</span> Designer
+          </h2>
+          <p class="section-description">
+            As a Game designer and developer, I work closely with clients to understand their needs and goals for their software or
+            website.
+          </p>
+          <div class="interface-image">
+            <img src="Images/Game Project Pay the Ferryman.png" alt="UI Design">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-header">
+      <h1 class="services-title">My Specialization</h1>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon"><i data-lucide="code"></i></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Web Development</h2>
+          <p class="service-description">…</p>
+          <div class="service-projects">10+ PROJECTS</div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon"><i data-lucide="gamepad-2"></i></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Game Development</h2>
+          <p class="service-description">…</p>
+          <div class="service-projects">10+ PROJECTS</div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon"><i data-lucide="video"></i></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">Video Editing</h2>
+          <p class="service-description">…</p>
+          <div class="service-projects">1000+ PROJECTS</div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-container">
+          <div class="service-icon"><i data-lucide="smartphone"></i></div>
+        </div>
+        <div class="service-content">
+          <h2 class="service-title">App Development</h2>
+          <p class="service-description">…</p>
+          <div class="service-projects">2 PROJECTS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works">
+    <div class="works-intro">
+      <h1>My Recent Works</h1>
+      <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
+      <div class="filter-buttons">
+        <button class="active">All</button>
+        <button>Web</button>
+        <button>Games</button>
+        <button>Apps</button>
+      </div>
+    </div>
+    <div class="works-container">
+      <div class="work-item">
+        <img src="Images/Game Project Pay the Ferryman.png" alt="Pay the Ferryman">
+        <div class="work-description">
+          <h3>Pay the Ferryman</h3>
+          <p>…</p>
+        </div>
+      </div>
+      <div class="work-item">
+        <img src="Images/Game Project Alien Anomoly.png" alt="Alien Anomoly">
+        <div class="work-description">
+          <h3>Alien Anomoly</h3>
+          <p>…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <h1>My Skills</h1>
+  <p class="subtitle">
+    We put your ideas and thus your wishes in the form of a unique web project that
+    inspires you and your customers.
+  </p>
+
+  <div class="skills-grid">
+    <!-- Unity 6 -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Images/Unity.png" alt="Unity logo" />
+      </div>
+      <div class="skill-progress-container">
+        <div class="skill-progress" data-percentage="92"></div>
+      </div>
+      <div class="skill-percentage">92%</div>
+      <h3 class="skill-name">Unity 6</h3>
+    </div>
+
+    <!-- Unreal Engine 5 -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Images/UE5.png" alt="Unreal Engine logo" />
+      </div>
+      <div class="skill-progress-container">
+        <div class="skill-progress" data-percentage="76"></div>
+      </div>
+      <div class="skill-percentage">76%</div>
+      <h3 class="skill-name">Unreal Engine 5</h3>
+    </div>
+
+    <!-- Blender -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Images/Blender.png" alt="Blender logo" />
+      </div>
+      <div class="skill-progress-container">
+        <div class="skill-progress" data-percentage="85"></div>
+      </div>
+      <div class="skill-percentage">85%</div>
+      <h3 class="skill-name">Blender</h3>
+    </div>
+
+    <!-- C# -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Images/CSharp.png" alt="C# logo" />
+      </div>
+      <div class="skill-progress-container">
+        <div class="skill-progress" data-percentage="88"></div>
+      </div>
+      <div class="skill-percentage">88%</div>
+      <h3 class="skill-name">C#</h3>
+    </div>
+
+    <!-- C++ -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Images/C++.png" alt="C++ logo" />
+      </div>
+      <div class="skill-progress-container">
+        <div class="skill-progress" data-percentage="82"></div>
+      </div>
+      <div class="skill-percentage">82%</div>
+      <h3 class="skill-name">C++</h3>
+    </div>
+
+    <!-- HTML + CSS -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Images/HTML.png" alt="HTML & CSS logo" />
+      </div>
+      <div class="skill-progress-container">
+        <div class="skill-progress" data-percentage="88"></div>
+      </div>
+      <div class="skill-percentage">88%</div>
+      <h3 class="skill-name">HTML + CSS</h3>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <h2>Let's Get in Touch</h2>
+  <p>Whether it's a new project or just a friendly hello — drop me a message!</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+
+
+  <!-- PLACEHOLDERS -->
+  <section id="skills"></section>
+  <section id="testimonials"></section>
+  <section id="contact"></section>
+
+  <!-- SCRIPTS -->
+  
+  <script>
+
+    // skill bar progress animations
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.skill-progress').forEach(el => {
+        const pct = el.getAttribute('data-percentage');
+        const width = Math.max(0, Math.min(100, Number(pct)));
+        el.style.width = width + '%';
+      });
+    });
+  </script>
+
+  <script>
+    window.addEventListener('load', () => {
+      lucide.createIcons();
+
+      // scroll-spy
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      function onScroll() {
+        const pos = window.scrollY + window.innerHeight/3;
+        sections.forEach(sec => {
+          const id = sec.id;
+          if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
+            navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${id}`));
+          }
+        });
+      }
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+
+      // filter-buttons
+      document.querySelectorAll('#works .filter-buttons button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#works .filter-buttons button').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          // TODO: add filtering logic
+        });
+      });
+    });
+  </script>
+</body>
+</html>

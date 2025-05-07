@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recent Works</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            background: #121212;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hire-btn {
+            background: #6A9DFF;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 40px 60px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 40px;
+            background: linear-gradient(to right, #E6F0FF , #6A9DFF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            font-size: 16px;
+            color: #bbb;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .filter-buttons {
+            display: inline-flex;
+            background: #2A3F8F;
+            padding: 6px;
+            border-radius: 25px;
+            margin-bottom: 40px;
+        }
+
+        .filter-buttons button {
+            background: none;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .filter-buttons button.active {
+            background: #6A9DFF;
+        }
+
+        .works-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .work-item {
+            background: #121212;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 350px;
+            text-align: left;
+            position: relative;
+        }
+
+        .work-item img {
+            width: 100%;
+            height: 70%;
+        }
+
+        .work-description {
+            background: linear-gradient(90deg, #2A3F8F, #6A9DFF);
+            padding: 20px;
+            color: white;
+        }
+
+        .work-description h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .work-description p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">R</div>
+        <div>reirei@gmail.com</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="works.html" class="nav-link">Works</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+        <button class="hire-btn">Hire Me!</button>
+    </header>
+
+    <main>
+        <h1>My Recent Works</h1>
+        <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
+
+        <div class="filter-buttons">
+            <button class="active">All</button>
+            <button>Web</button>
+            <button>Games</button>
+            <button>Apps</button>
+        </div>
+
+        <div class="works-container">
+            <div class="work-item">
+                <img src="Images\Game Project Pay the Ferryman.png" alt="Project 1">
+                <div class="work-description">
+                    <h3>Pay the Ferryman</h3>
+                    <p>Play as a diver lost at sea, journeying to pay Charon and cross the River Styx. Explore deep underwater in this 2D pixel-art platformer to find the passage to the afterlife.</p>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <img src="Images\Game Project Alien Anomoly.png" alt="Project 2">
+                <div class="work-description">
+                    <h3>Alien Anomoly</h3>
+                    <p>You are a  special force sniper tasked with ridding the world of extraterrestrial beings, known as anomalies, that are hiding among the public as they scheme to take down humanity from within. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll(".filter-buttons button");
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                buttons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+                // Here you would filter items if using JS logic
+            });
+        });
+    </script>
+</body>
+
+</html>
