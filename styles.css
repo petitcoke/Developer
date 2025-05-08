@@ -926,3 +926,104 @@ header {
   color: var(--text-primary);
 }
 
+/* Mobile Navigation */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--neutral-800);
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Header padding adjustment */
+  header {
+    padding: 1rem;
+  }
+
+  /* Hero Section Adjustments */
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Achievements Grid */
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Service Cards */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Works Section */
+  .filter-buttons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .work-item {
+    width: 100%;
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Form */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex !important;
+    gap: 2rem;
+  }
+}
