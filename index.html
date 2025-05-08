@@ -2,56 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <title>Rei’s Portfolio</title>
 
-  <!-- Open Graph Meta Tags -->
+  <!-- Meta Tags -->
   <meta property="og:title" content="Rei's Portfolio">
   <meta property="og:description" content="Web & Game Developer creating beautifully simple digital experiences">
   <meta property="og:image" content="https://petitcoke.github.io/Developer/documents/Profile.jpg">
   <meta property="og:url" content="https://petitcoke.github.io/Developer/">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Rei's Portfolio">
   <meta name="twitter:description" content="Web & Game Developer creating beautifully simple digital experiences">
   <meta name="twitter:image" content="https://petitcoke.github.io/Developer/documents/Profile.jpg">
 
-  <!-- main stylesheet & Google Font -->
+  <!-- Styles & Fonts -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
-  <!-- HEADER / NAV -->
   <header class="header">
     <div class="logo-container">
       <a href="#home" class="logo">
-        <img src="documents/Logo.png" alt="Logo" width="50" height="50">
+        <img src="documents/Logo.png" alt="Logo" width="50" height="50" loading="lazy">
       </a>
       <span class="email">reirei@gmail.com</span>
     </div>
 
-    <nav class="main-nav">
-      <a href="#home"        class="nav-link">Home</a>
-      <a href="#services"    class="nav-link">Services</a>
-      <a href="#works"       class="nav-link">Works</a>
-      <a href="#skills"      class="nav-link">Software</a>
-      <a href="#testimonials"class="nav-link">Testimonials</a>
-      <a href="#contact"     class="nav-link">Contact</a>
-    </nav>
+    <button class="menu-toggle" aria-label="Mobile menu" aria-expanded="false" aria-controls="main-nav">
+      <i data-lucide="menu"></i>
+    </button>
 
-    <a href="/documents/Rei CV.pdf" class="btn btn-primary">
-      Resume
-      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.5 1.5V10.5M7.5 10.5L3.5 6.5M7.5 10.5L11.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M3 13.5H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#works" class="nav-link">Works</a>
+      <a href="#skills" class="nav-link">Software</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
   </header>
 
   <!-- HOME -->
@@ -121,8 +110,9 @@
         </div>
       </div>
     </section>
-
-    <!-- ACHIEVEMENTS -->
+    
+<!-- ACHIEVEMENTS -->
+<!--
     <section class="achievements-section">
       <div class="achievements-grid">
         <div class="card achievements-card">
@@ -152,7 +142,7 @@
       </div>
     </section>
   </section>
-
+-->
   <!-- SERVICES -->
   <section id="services">
     <div class="services-header">
@@ -338,7 +328,6 @@
   <!-- SCRIPTS -->
   
   <script>
-
     // skill bar progress animations
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.skill-progress').forEach(el => {
@@ -348,6 +337,10 @@
       });
     });
   </script>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
 
   <script>
     window.addEventListener('load', () => {
