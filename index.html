@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-  <title>Rei’s Portfolio</title>
+  <title>Rei's Portfolio</title>
 
   <!-- Meta Tags -->
   <meta property="og:title" content="Rei's Portfolio">
@@ -38,7 +38,7 @@
       <a href="#services" class="nav-link">Services</a>
       <a href="#works" class="nav-link">Works</a>
       <a href="#skills" class="nav-link">Software</a>
-      <a href="#testimonials" class="nav-link">Testimonials</a>
+      
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
   </header>
@@ -77,7 +77,6 @@
                 <i data-lucide="twitter"></i>
               </a>
             </div>
-            
           </div>
         </div>
       </div>
@@ -110,39 +109,8 @@
         </div>
       </div>
     </section>
-    
-<!-- ACHIEVEMENTS -->
-<!--
-    <section class="achievements-section">
-      <div class="achievements-grid">
-        <div class="card achievements-card">
-          <h2 class="section-title">
-            <span class="highlight">Achievements</span> in my professional life.
-          </h2>
-          <p class="section-description">
-            Since beginning my journey as a student nearly 3 years ago, I've made more than 10 games,
-            a few websites, and collaborated with talented people to create beautiful games.
-          </p>
-          <a href="#contact" class="btn btn-primary">
-            Contact Me <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-        <div class="card interface-card">
-          <h2 class="section-title">
-            <span class="highlight">Game</span> Designer
-          </h2>
-          <p class="section-description">
-            As a Game designer and developer, I work closely with clients to understand their needs and goals for their software or
-            website.
-          </p>
-          <div class="interface-image">
-            <img src="documents/Game Project Pay the Ferryman.png" alt="UI Design">
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
--->
+
   <!-- SERVICES -->
   <section id="services">
     <div class="services-header">
@@ -195,198 +163,157 @@
       </div>
     </div>
     <div class="works-container">
-      <div class="work-item">
+      <!-- Video Editing Portfolio -->
+      <div class="work-item" data-category="web">
+        <img src="documents/Web Project Video Editing Portfolio.png" alt="Video Editing Portfolio">
+        <div class="work-description">
+          <h3>Video Editing Portfolio</h3>
+          <p>A responsive portfolio website showcasing video editing services</p>
+        </div>
+        <button class="view-game-btn" onclick="window.open('https://rei-video-editing-portfolio.lovable.app/', '_blank')">View Website</button>
+      </div>
+      
+      <!-- Pay the Ferryman -->
+      <div class="work-item" data-category="games">
         <img src="documents/Game Project Pay the Ferryman.png" alt="Pay the Ferryman">
         <div class="work-description">
           <h3>Pay the Ferryman</h3>
-          <p>A 2D-pixel art platformer</p>
+          <p>A 2D-pixel art platformer, with a compelling story</p>
         </div>
-
         <button class="view-game-btn" onclick="window.open('https://megzneko.itch.io/pay-the-ferryman', '_blank')">View Game</button>
-      
       </div>
-      <div class="work-item">
+      
+      <!-- Alien Anomoly -->
+      <div class="work-item" data-category="games">
         <img src="documents/Game Project Alien Anomoly.png" alt="Alien Anomoly">
         <div class="work-description">
           <h3>Alien Anomoly</h3>
-          <p>A casual, light-heartedpuzzle shooter</p>
+          <p>A casual, light-hearted puzzle shooter</p>
         </div>
-        
         <button class="view-game-btn" onclick="window.open('https://megzneko.itch.io/alien-anomaly', '_blank')">View Game</button>
-
+      </div>
+      
+      <!-- Miasma - New Game Added -->
+      <div class="work-item" data-category="games">
+        <img src="documents/Game Project Miasma.png" alt="Miasma">
+        <div class="work-description">
+          <h3>Miasma</h3>
+          <p>A next-generation horror experience with voice-driven gameplay</p>
+        </div>
+        <button class="view-game-btn" onclick="window.open('https://reidot.itch.io/miasma', '_blank')">View Game</button>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-<section id="skills" class="skills-section">
-  <h1>My Skills</h1>
-  <p class="subtitle">
-    We put your ideas and thus your wishes in the form of a unique web project that
-    inspires you and your customers.
-  </p>
+  <section id="skills" class="skills-section">
+    <h1>My Skills</h1>
+    <p class="subtitle">
+      We put your ideas and thus your wishes in the form of a unique web project that
+      inspires you and your customers.
+    </p>
 
-  <div class="skills-grid">
-    <!-- Unity 6 -->
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="documents/Unity.png" alt="Unity logo" />
+    <div class="skills-grid">
+      <!-- Unity 6 -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="documents/Unity.png" alt="Unity logo" />
+        </div>
+        <div class="skill-progress-container">
+          <div class="skill-progress" data-percentage="92"></div>
+        </div>
+        <div class="skill-percentage">92%</div>
+        <h3 class="skill-name">Unity 6</h3>
       </div>
-      <div class="skill-progress-container">
-        <div class="skill-progress" data-percentage="92"></div>
+
+      <!-- Unreal Engine 5 -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="documents/UE5.png" alt="Unreal Engine logo" />
+        </div>
+        <div class="skill-progress-container">
+          <div class="skill-progress" data-percentage="76"></div>
+        </div>
+        <div class="skill-percentage">76%</div>
+        <h3 class="skill-name">Unreal Engine 5</h3>
       </div>
-      <div class="skill-percentage">92%</div>
-      <h3 class="skill-name">Unity 6</h3>
+
+      <!-- Blender -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="documents/Blender.png" alt="Blender logo" />
+        </div>
+        <div class="skill-progress-container">
+          <div class="skill-progress" data-percentage="85"></div>
+        </div>
+        <div class="skill-percentage">85%</div>
+        <h3 class="skill-name">Blender</h3>
+      </div>
+
+      <!-- C# -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="documents/CSharp.png" alt="C# logo" />
+        </div>
+        <div class="skill-progress-container">
+          <div class="skill-progress" data-percentage="88"></div>
+        </div>
+        <div class="skill-percentage">88%</div>
+        <h3 class="skill-name">C#</h3>
+      </div>
+
+      <!-- C++ -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="documents/C++.png" alt="C++ logo" />
+        </div>
+        <div class="skill-progress-container">
+          <div class="skill-progress" data-percentage="82"></div>
+        </div>
+        <div class="skill-percentage">82%</div>
+        <h3 class="skill-name">C++</h3>
+      </div>
+
+      <!-- HTML + CSS -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="documents/HTML.png" alt="HTML & CSS logo" />
+        </div>
+        <div class="skill-progress-container">
+          <div class="skill-progress" data-percentage="88"></div>
+        </div>
+        <div class="skill-percentage">88%</div>
+        <h3 class="skill-name">HTML + CSS</h3>
+      </div>
     </div>
+  </section>
 
-    <!-- Unreal Engine 5 -->
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="documents/UE5.png" alt="Unreal Engine logo" />
-      </div>
-      <div class="skill-progress-container">
-        <div class="skill-progress" data-percentage="76"></div>
-      </div>
-      <div class="skill-percentage">76%</div>
-      <h3 class="skill-name">Unreal Engine 5</h3>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <h2>Let's Get in Touch</h2>
+    <p>Whether it's a new project or just a friendly hello — drop me a message!</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/reidev/" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="linkedin"></i>
+      </a>
+      <a href="https://instagram.com/reicoder" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@petitcoke" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="youtube"></i>
+      </a>
+      <a href="https://x.com/petitcoke" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="twitter"></i>
+      </a>
     </div>
-
-    <!-- Blender -->
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="documents/Blender.png" alt="Blender logo" />
-      </div>
-      <div class="skill-progress-container">
-        <div class="skill-progress" data-percentage="85"></div>
-      </div>
-      <div class="skill-percentage">85%</div>
-      <h3 class="skill-name">Blender</h3>
-    </div>
-
-    <!-- C# -->
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="documents/CSharp.png" alt="C# logo" />
-      </div>
-      <div class="skill-progress-container">
-        <div class="skill-progress" data-percentage="88"></div>
-      </div>
-      <div class="skill-percentage">88%</div>
-      <h3 class="skill-name">C#</h3>
-    </div>
-
-    <!-- C++ -->
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="documents/C++.png" alt="C++ logo" />
-      </div>
-      <div class="skill-progress-container">
-        <div class="skill-progress" data-percentage="82"></div>
-      </div>
-      <div class="skill-percentage">82%</div>
-      <h3 class="skill-name">C++</h3>
-    </div>
-
-    <!-- HTML + CSS -->
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="documents/HTML.png" alt="HTML & CSS logo" />
-      </div>
-      <div class="skill-progress-container">
-        <div class="skill-progress" data-percentage="88"></div>
-      </div>
-      <div class="skill-percentage">88%</div>
-      <h3 class="skill-name">HTML + CSS</h3>
-    </div>
-  </div>
-</section>
-
-
-<!-- CONTACT -->
- 
-<section class="contact-section" id="contact">
-  <h2>Let's Get in Touch</h2>
-  <p>Whether it's a new project or just a friendly hello — drop me a message!</p>
-
-  <!--
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  -->
-
-  <div class="social-links">
-              <a href="https://www.linkedin.com/in/reidev/" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="linkedin"></i>
-              </a>
-              <a href="https://instagram.com/reicoder" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="instagram"></i>
-              </a>
-              <a href="https://www.youtube.com/@petitcoke" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="youtube"></i>
-              </a>
-              <a href="https://x.com/petitcoke" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="twitter"></i>
-              </a>
-            </div>
-            
-</section>
-
-
-
+  </section>
 
   <!-- PLACEHOLDERS -->
-  <section id="skills"></section>
   <section id="testimonials"></section>
-  <section id="contact"></section>
 
-  <!-- SCRIPTS -->
-  
-  <script>
-    // skill bar progress animations
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.skill-progress').forEach(el => {
-        const pct = el.getAttribute('data-percentage');
-        const width = Math.max(0, Math.min(100, Number(pct)));
-        el.style.width = width + '%';
-      });
-    });
-  </script>
-
-<!-- Scripts -->
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="script.js"></script>
-
-  <script>
-    window.addEventListener('load', () => {
-      lucide.createIcons();
-
-      // scroll-spy
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
-      function onScroll() {
-        const pos = window.scrollY + window.innerHeight/3;
-        sections.forEach(sec => {
-          const id = sec.id;
-          if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
-            navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${id}`));
-          }
-        });
-      }
-      window.addEventListener('scroll', onScroll);
-      onScroll();
-
-      // filter-buttons
-      document.querySelectorAll('#works .filter-buttons button').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('#works .filter-buttons button').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          // TODO: add filtering logic
-        });
-      });
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
 </body>
 </html>
