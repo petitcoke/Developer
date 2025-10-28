@@ -73,13 +73,27 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Filter Button Functionality
     const filterButtonsHandler = () => {
-      const filterButtons = document.querySelectorAll('#works .filter-buttons button');
+      const filterButtons = document.querySelectorAll('.filter-buttons button');
+      const workItems = document.querySelectorAll('.work-item');
       
-      filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          // Add your filtering logic here
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to the clicked button
+          button.classList.add('active');
+  
+          const filter = button.textContent.toLowerCase(); // Get filter category
+  
+          workItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            // Show item if filter matches or "All" is selected
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
         });
       });
     };
@@ -95,4 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   
     animateSkillBars();
-  });
+});
